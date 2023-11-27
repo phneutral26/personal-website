@@ -3,39 +3,78 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Portfolio - Phil Hartmann</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- Main Website Code -->
+  <div class="content">
+
+    <div class="content main-content">
+      <section class="section">
+        <h1>my portfolio</h1>
+        <p>
+          i am a 16 year old student from germany, currently learning
+          web development (as one might see).
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>my projects</h2>
+        <!-- Add your featured projects here -->
+        <div class="project-card">
+          <h3>this website</h3>
+          <p>
+            this actually is my first SERIOUS website. before this i experimented
+            with various concepts, but nothing really worked out. the code for this
+            website is <a href="https://github.com/phneutral26/personal-website">open-source</a> by the way.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>for now: ansible-homeserver</h3>
+          <p>due to a lack of real projects i decided to include my homeserver configuration,
+          that i did in ansible. it was a really good way to get to know ansible as a
+          devops tool and you can find it <a href="https://github.com/phneutral26/ansible-homeserver">here</a>. </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>contact me</h2>
+        <p>interested in collaborating or have questions? feel free to reach out!</p>
+        <br>
+        <button onclick="showContactForm()">contact now</button>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Phil Hartmann. <a href="LICENSE.txt">LICENSE</a></p>
+    </footer>
+
+
+
+  </div>
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    // Include the Navbar in index.html
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </body>
 
 </html>

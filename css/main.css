@@ -4,6 +4,7 @@
 /* Light Color Scheme */
 :root {
   --background-color: #f8f8f8;
+  --purple: #7843E6L;
   --text-color: #333;
   --link-color: #007bff;
   --link-hover-color: #0056b3;
@@ -110,11 +111,13 @@ footer {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: var(--link-color);
+  background-color: #7843E6;
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 12px;
 }
+
 
 .project-card {
   background-color: #f5f5f5;

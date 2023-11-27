@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio - Phil Hartmann</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>
+
+<!-- Main Website Code -->
+<div class="content">
+
+  <div class="content main-content">
+    <section class="section">
+      <h1>about me</h1>
+      greetings! i'm phil hartmann, a devoted student with a penchant for weaving captivating web experiences. by day, i contribute to a company specializing in distributing checkboxes, and by night, i'm immersed in the dynamic world of web development.
+
+      my journey into the realm of code commenced in 8th grade when i uncovered the enchantment of creating digital landscapes. one crowning achievement in my portfolio is the website for my school's choir, accessible at <a href="schülermachenoper.de">schülermachenoper.de</a>, where me and a fellow student from my year created a digital space using html, css, and javascript. this project stands as a testament to the harmonious blend of technology and creativity.
+
+      i am proficient in an array of programming languages, for example java, python, c, javascript, and kotlin. git, ansible, linux, bash, docker, and more are tools i wield skillfully, shaping the digital canvas to bring ideas to life.
+
+      i have a particular fondness for minimalism and the transformative process of watching a website evolve into its envisioned form. my journey with computers started at a young age, and i currently navigate the digital landscape using linux for its privacy and security advantages over other platforms.
+
+      join me on this digital odyssey as we explore the intersection of code, creativity, and functionality. let's build experiences that not only meet expectations but exceed them.
+    </section>
+
+    <section class="section">
+      <h2>my links</h2><br>
+
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Phil Hartmann. <a href="LICENSE.txt">LICENSE</a></p>
+  </footer>
+
+
+
+</div>
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Include the Navbar in index.html
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-container').innerHTML = data;
+    });
+</script>
+
+</body>
+
+</html>

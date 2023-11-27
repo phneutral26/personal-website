@@ -137,3 +137,27 @@ button {
 .project-card p {
   color: #666;
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-link {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-link img {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  /*border-radius: 50%;*/
+  transition: transform 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.social-link img:hover {
+  transform: scale(1.2);
+}
+

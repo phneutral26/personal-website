@@ -1,22 +1,19 @@
 @font-face {
   font-family: NineteenNinetySeven-11XB;
-  src: url("NineteenNinetySeven-11XB.ttf")
+  src: url("fonts/NineteenNinetySeven-11XB.ttf")
 }
 /* Light Color Scheme */
 :root {
   --background-color: #f8f8f8;
   --purple: #7843E6;
   --text-color: #333;
-  --link-color: #007bff;
-  --link-hover-color: #0056b3;
 }
 
 /* Dark Color Scheme */
 :root.dark {
   --background-color: #1a1a1a;
   --text-color: #fff;
-  --link-color: #4caf50;
-  --link-hover-color: #45a049;
+  --purple: #7843E6;
 }
 
 /* Reset some default styles */

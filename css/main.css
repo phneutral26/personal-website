@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
-
+@font-face {
+  font-family: NineteenNinetySeven-11XB;
+  src: url("/css/NineteenNinetySeven-11XB.ttf")
+}
 /* Light Color Scheme */
 :root {
   --background-color: #f8f8f8;
-  --purple: #7843E6L;
+  --purple: #7843E6;
   --text-color: #333;
   --link-color: #007bff;
   --link-hover-color: #0056b3;
@@ -22,9 +23,13 @@
 body, h1, h2, p, ul {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'NineteenNinetySeven-11XB', serif;
   color: var(--text-color);
   background-color: var(--background-color);
+}
+
+a {
+  color: var(--purple);
 }
 
 body {

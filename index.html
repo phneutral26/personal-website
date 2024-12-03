@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="de">
 
 <head>
   <meta charset="utf-8">
@@ -16,85 +16,76 @@
   <!-- Navbar -->
   <div id="navbar-container"></div>
 
-  <!-- Main Website Code -->
+  <!-- Haupt-Inhalt -->
   <div class="content">
 
     <div class="content main-content">
       <section class="section">
-        <h1>my portfolio</h1>
+        <h1>Mein Portfolio</h1>
         <p>
-          i am a 16 year old student from germany, currently learning
-          web development (as one might see).
+          Hi, ich bin Phil, 17 Jahre alt und mache aktuell ich meinen Bachelor in <a href="https://www.htwk-leipzig.de/studieren/studiengaenge/kooperative-studiengaenge/telekommunikationsinformatik-kooperativer-studiengang/">"Telekommunikationsinformatik"</a> an der <a href="https://htwk-leipzig.de">HTWK Leipzig</a>.  
         </p>
       </section>
 
       <section class="section">
-        <h2>my projects</h2><br>
-        <!-- Add your featured projects here -->
-        <div class="project-card">
-          <h3>this website</h3>
-          <p>
-            this actually is my first SERIOUS website. before this i experimented
-            with various concepts, but nothing really worked out. the code for this
-            website is <a href="https://github.com/phneutral26/personal-website">open-source</a> by the way.
-          </p>
-        </div>
+        <h2>Meine Projekte</h2><br>
+        <!-- Füge hier deine Projekte hinzu -->
         <div class="project-card">
           <h3><a href="https://schülermachenoper.de">schülermachenoper.de</a></h3>
           <p>
-            a website i created for my schools choir's opera next year. nothing special, take a look at it if you want.
+            Eine Website, die ich für die Oper des Schulchors an meinem ehemaligen Gymnasiums geschrieben habe.
           </p>
         </div>
         <div class="project-card">
-          <h3>for now: ansible-homeserver</h3>
-          <p>due to a lack of real projects i decided to include my homeserver configuration,
-          that i did in ansible. it was a really good way to get to know ansible as a
-          devops tool and you can find it <a href="https://github.com/phneutral26/ansible-homeserver">here</a>. </p>
+          <h3><a href="https://github.com/phneutral26/ansible-homeserver">ansible-homeserver</a></h3>
+          <p>Da ich nicht so viele "richtige" Projekte habe, pack ich hier mal die Konfiguration meines Homeservers rein, die ich mit Ansible gemacht hab. War ein sehr interressanter Einstieg in DevOps.</p>
+        </div>
+        <div class="project-card">
+          <h3>Diese Website</h3>
+          <p>
+            Das hier ist meine erste wirklich ernst gemeinte Website. Davor hab ich viel rumprobiert, aber nichts hat so richtig funktioniert. Falls dich der Code interessiert – der ist übrigens <a href="https://github.com/phneutral26/personal-website">Open Source</a>.
+          </p>
         </div>
       </section>
 
       <section class="section">
 
         <div class="social-links">
-          <a href="https://x.com/your_twitter_handle" class="social-link" target="_blank">
-            <img src="img/x-icon.png" alt="x" width="50" height="50">
-          </a>
-
           <a href="https://news.ycombinator.com/user?id=phneutral26" class="social-link" target="_blank">
-            <img src="img/y18.svg" alt="hn" width="50" height="50">
+            <img src="img/y18.svg" alt="HN" width="50" height="50">
           </a>
 
           <a href="https://github.com/phneutral26" class="social-link" target="_blank">
             <img src="img/github-mark.svg" alt="GitHub" width="50" height="50">
           </a>
 
-          <!-- Add more social links as needed -->
+          <!-- Füge hier nach Bedarf weitere Social-Media-Links hinzu -->
         </div>
 
       </section>
 
       <section class="section">
-        <h2>contact me</h2>
-        <p>interested in collaborating or have questions? feel free to reach out!</p>
+        <h2>Schreib mir!</h2>
+        <p>Bock auf eine Zusammenarbeit oder Fragen zu meinen Projekten? Meld dich einfach bei mir!</p>
         <br>
-        <button id="button-contact" onclick="showContactForm()">contact now</button>
+        <a href="mailto:philerichartmann@gmail.com">
+          <button class="button">Kontakt aufnehmen</button>
+        </a>
+          
       </section>
     </div>
 
     <footer>
-      <p>&copy; 2023 Phil Hartmann. <a href="LICENSE.txt">LICENSE</a></p>
+      <p>&copy; 2023-2024 Phil Hartmann. <a href="LICENSE.txt">Lizenz</a></p>
     </footer>
 
-
-
   </div>
-
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script>
-    // Include the Navbar in index.html
+    // Navbar laden und einfügen
     fetch('navbar.html')
       .then(response => response.text())
       .then(data => {
